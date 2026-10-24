@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B2B76A16308B988500338F3A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2B76A15308B988500338F3A /* main.cpp */; };
+		B2B76A27308B9A8200338F3A /* PlatformGLFW.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2B76A1F308B9A8200338F3A /* PlatformGLFW.cpp */; };
+		B2B76A28308B9A8200338F3A /* StreamPacketReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2B76A24308B9A8200338F3A /* StreamPacketReader.cpp */; };
+		B2B76A29308B9A8200338F3A /* StreamSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2B76A26308B9A8200338F3A /* StreamSocket.cpp */; };
+		B2B76A2A308B9A8200338F3A /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2B76A1C308B9A8200338F3A /* Image.cpp */; };
+		B2B76A2D308B9C6A00338F3A /* libglfw.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B2B76A2C308B9C6A00338F3A /* libglfw.3.dylib */; };
+		B2B76A2E308B9C6A00338F3A /* libglfw.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B2B76A2C308B9C6A00338F3A /* libglfw.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B2B76A31308B9C9B00338F3A /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2B76A30308B9C9B00338F3A /* OpenGL.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B2B76A08308B984500338F3A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		B2B76A2F308B9C6A00338F3A /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B2B76A2E308B9C6A00338F3A /* libglfw.3.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B2B76A0A308B984500338F3A /* TinyBeMeViewer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TinyBeMeViewer; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2B76A15308B988500338F3A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B2B76A18308B9A8200338F3A /* glfw3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glfw3.h; sourceTree = "<group>"; };
+		B2B76A19308B9A8200338F3A /* glfw3native.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = glfw3native.h; sourceTree = "<group>"; };
+		B2B76A1B308B9A8200338F3A /* Image.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Image.hpp; sourceTree = "<group>"; };
+		B2B76A1C308B9A8200338F3A /* Image.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Image.cpp; sourceTree = "<group>"; };
+		B2B76A1D308B9A8200338F3A /* linmath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = linmath.h; sourceTree = "<group>"; };
+		B2B76A1E308B9A8200338F3A /* OpenGL.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OpenGL.hpp; sourceTree = "<group>"; };
+		B2B76A1F308B9A8200338F3A /* PlatformGLFW.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PlatformGLFW.cpp; sourceTree = "<group>"; };
+		B2B76A20308B9A8200338F3A /* PortableSession.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PortableSession.hpp; sourceTree = "<group>"; };
+		B2B76A21308B9A8200338F3A /* ProtocolStructures.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ProtocolStructures.hpp; sourceTree = "<group>"; };
+		B2B76A22308B9A8200338F3A /* ReadStream.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ReadStream.hpp; sourceTree = "<group>"; };
+		B2B76A23308B9A8200338F3A /* StreamPacketReader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StreamPacketReader.hpp; sourceTree = "<group>"; };
+		B2B76A24308B9A8200338F3A /* StreamPacketReader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StreamPacketReader.cpp; sourceTree = "<group>"; };
+		B2B76A25308B9A8200338F3A /* StreamSocket.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StreamSocket.hpp; sourceTree = "<group>"; };
+		B2B76A26308B9A8200338F3A /* StreamSocket.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StreamSocket.cpp; sourceTree = "<group>"; };
+		B2B76A2C308B9C6A00338F3A /* libglfw.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libglfw.3.dylib; sourceTree = "<group>"; };
+		B2B76A30308B9C9B00338F3A /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2B76A07308B984500338F3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2B76A2D308B9C6A00338F3A /* libglfw.3.dylib in Frameworks */,
+				B2B76A31308B9C9B00338F3A /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B2B76A01308B984500338F3A = {
+			isa = PBXGroup;
+			children = (
+				B2B76A1A308B9A8200338F3A /* GLFW */,
+				B2B76A1B308B9A8200338F3A /* Image.hpp */,
+				B2B76A1C308B9A8200338F3A /* Image.cpp */,
+				B2B76A1D308B9A8200338F3A /* linmath.h */,
+				B2B76A1E308B9A8200338F3A /* OpenGL.hpp */,
+				B2B76A1F308B9A8200338F3A /* PlatformGLFW.cpp */,
+				B2B76A20308B9A8200338F3A /* PortableSession.hpp */,
+				B2B76A21308B9A8200338F3A /* ProtocolStructures.hpp */,
+				B2B76A22308B9A8200338F3A /* ReadStream.hpp */,
+				B2B76A23308B9A8200338F3A /* StreamPacketReader.hpp */,
+				B2B76A24308B9A8200338F3A /* StreamPacketReader.cpp */,
+				B2B76A25308B9A8200338F3A /* StreamSocket.hpp */,
+				B2B76A26308B9A8200338F3A /* StreamSocket.cpp */,
+				B2B76A15308B988500338F3A /* main.cpp */,
+				B2B76A2B308B9C6A00338F3A /* Frameworks */,
+				B2B76A0B308B984500338F3A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B2B76A0B308B984500338F3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2B76A0A308B984500338F3A /* TinyBeMeViewer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2B76A1A308B9A8200338F3A /* GLFW */ = {
+			isa = PBXGroup;
+			children = (
+				B2B76A18308B9A8200338F3A /* glfw3.h */,
+				B2B76A19308B9A8200338F3A /* glfw3native.h */,
+			);
+			path = GLFW;
+			sourceTree = "<group>";
+		};
+		B2B76A2B308B9C6A00338F3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2B76A30308B9C9B00338F3A /* OpenGL.framework */,
+				B2B76A2C308B9C6A00338F3A /* libglfw.3.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2B76A09308B984500338F3A /* TinyBeMeViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2B76A11308B984500338F3A /* Build configuration list for PBXNativeTarget "TinyBeMeViewer" */;
+			buildPhases = (
+				B2B76A06308B984500338F3A /* Sources */,
+				B2B76A07308B984500338F3A /* Frameworks */,
+				B2B76A08308B984500338F3A /* CopyFiles */,
+				B2B76A2F308B9C6A00338F3A /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TinyBeMeViewer;
+			packageProductDependencies = (
+			);
+			productName = TinyBeMeViewer;
+			productReference = B2B76A0A308B984500338F3A /* TinyBeMeViewer */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2B76A02308B984500338F3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					B2B76A09308B984500338F3A = {
+						CreatedOnToolsVersion = 26.5;
+					};
+				};
+			};
+			buildConfigurationList = B2B76A05308B984500338F3A /* Build configuration list for PBXProject "TinyBeMeViewer" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2B76A01308B984500338F3A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B2B76A0B308B984500338F3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2B76A09308B984500338F3A /* TinyBeMeViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2B76A06308B984500338F3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2B76A16308B988500338F3A /* main.cpp in Sources */,
+				B2B76A27308B9A8200338F3A /* PlatformGLFW.cpp in Sources */,
+				B2B76A28308B9A8200338F3A /* StreamPacketReader.cpp in Sources */,
+				B2B76A29308B9A8200338F3A /* StreamSocket.cpp in Sources */,
+				B2B76A2A308B9A8200338F3A /* Image.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B2B76A0F308B984500338F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9VV79D348E;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					GL_SILENCE_DEPRECATION,
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B2B76A10308B984500338F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9VV79D348E;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B2B76A12308B984500338F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9VV79D348E;
+				ENABLE_HARDENED_RUNTIME = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B2B76A13308B984500338F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9VV79D348E;
+				ENABLE_HARDENED_RUNTIME = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2B76A05308B984500338F3A /* Build configuration list for PBXProject "TinyBeMeViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2B76A0F308B984500338F3A /* Debug */,
+				B2B76A10308B984500338F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2B76A11308B984500338F3A /* Build configuration list for PBXNativeTarget "TinyBeMeViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2B76A12308B984500338F3A /* Debug */,
+				B2B76A13308B984500338F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2B76A02308B984500338F3A /* Project object */;
+}
