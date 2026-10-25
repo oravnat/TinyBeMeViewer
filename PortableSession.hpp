@@ -41,9 +41,9 @@ struct TcpSessionData
     // Will be true to signal to stop the current session (but continue to listen on the
     // socket if this is the way the session was initialized):
     volatile bool stopSession;
-    // Host to try to connect to in case invalid socket is supplied:
+    // Host to try to connect to in case an invalid socket is supplied:
     char host[STR_LEN];
-    // Port to try to connect to or listen to in case invalid socket is supplied:
+    // Port to try to connect to or listen to in case an invalid socket is supplied:
     int port;
     bool bNeedWelcome = true;
 };
@@ -104,9 +104,10 @@ int PortableSession::SendV2Packet(uint16_t type, uint16_t len, const void* pPack
     return Send(buffer, (int)len + 4);
 }
 
-// The handshake is symmetric: sending welcome message, receiving welcome message, sending
-// session id, receiving session id, sending version, receiving version, sending ok flag,
-// receiving ok flag.
+// The handshake is symmetric: sending the welcome message, receiving the welcome message,
+// sending the session id, receiving the session id, sending the version, receiving
+// the version, sending an ok flag,
+// receiving an ok flag.
 int PortableSession::Handshake()
 {
     static const char WELCOME_MESSAGE[] = "v3 TCP connection\n";
@@ -117,23 +118,23 @@ int PortableSession::Handshake()
 
     if (m_pSessionData->bNeedWelcome)
     {
-        // Send welcome message:
+        // Send the welcome message:
         if (m_pSock->Send(WELCOME_MESSAGE, sizeof(WELCOME_MESSAGE)) <= 0)
             return false;
-        // Receive welcome message:
+        // Receive the welcome message:
         if (m_pSock->ReceiveFull(&str, sizeof(WELCOME_MESSAGE)) <= 0)
             return false;
         if (strncmp(str, WELCOME_MESSAGE, sizeof(WELCOME_MESSAGE)) != 0)
             return false;
     }
-    // Send and receive session id:
+    // Send and receive session id's:
     if (m_pSock->Send(&m_pSessionData->sessionId, sizeof(m_pSessionData->sessionId)) <= 0)
         return false;
     if (m_pSock->ReceiveFull(&remoteSessionId, sizeof(remoteSessionId)) <= 0)
         return false;
     if (remoteSessionId != m_pSessionData->sessionId)
         return false;
-    // Send to the client the highest version the server supported:
+    // Send the highest version supported locally:
     version = MAX_VERSION;
     if (m_pSock->Send((char*)&version, sizeof(version)) <= 0)
         return false;

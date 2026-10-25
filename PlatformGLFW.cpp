@@ -6,7 +6,7 @@
 //  Created by Or Avnat on 05/10/2026.
 //
 
-// Implementation using glfw
+// This implementation uses the glfw library
 
 #include <stdio.h>
 

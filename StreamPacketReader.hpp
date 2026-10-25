@@ -37,7 +37,7 @@ public:
 	void SetReadStream(ReadStream* pStream);
 private:
 	ReadStream* m_pStream;
-	// The buffer always starts from packet boundary.  The buffer contains the type
+	// The buffer always starts at packet boundary.  The buffer contains the type
 	// and length of the packet as well.
 	uint8_t m_buffer[BUFFER_SIZE];
 	int m_bytesInBuffer;

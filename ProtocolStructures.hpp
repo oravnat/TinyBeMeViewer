@@ -98,8 +98,8 @@ struct Bit24RectInfo
 {
     uint32_t x, y;
     uint32_t width, height;
-    // Bit 0 is on if a filter is used (the filter is the difference between
-    // the byte and the byte in the row above):
+    // Bit 0 is on if a filter is used (the filter encodes the difference between
+    // a specific byte and the byte in the row above it):
     uint32_t flags;
 };
 

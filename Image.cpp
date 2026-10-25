@@ -61,7 +61,7 @@ Image::Image(int w, int h, int widthBytes, int bitsPerPixel)
 }
 
 // The copy operator takes the ownership of the data from the other Image (the other Image
-// is empty after the operator).
+// is empty after the operator call).
 Image & Image::operator = (Image&& other)
 {
 	memcpy(this, &other, sizeof(Image));

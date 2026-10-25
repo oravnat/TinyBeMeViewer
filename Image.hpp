@@ -29,7 +29,7 @@ struct ImageRect
 };
 
 // The image data order is RGB for 24 bits and RGBA for 32 bits, but the palette for 8 bits is in BGRA order
-// Important note: the original Image class for windows from older BeMe code is BGR and BGRA for 24 and 32 bits
+// Important note: the original Image class from the older Windows version of BeMe uses the BGR and BGRA orders for 24 and 32 bits images respectively
 class Image
 {
 public:
@@ -42,8 +42,8 @@ public:
 protected:
 	Image(int w, int h, int widthBytes, int bitsPerPixel);
 public:
-	// The copy operator takes the ownership of the data from the other Image (the other Image
-	// is empty after the operator).
+	// The copy operator takes the ownership of the data from the other Image (the other
+    // Image is empty after the operator call).
 	Image & operator = (Image&& other);
 public:
 	void GetPixel(int x, int y, uint8_t& r, uint8_t& g, uint8_t& b);
