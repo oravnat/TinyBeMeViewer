@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="TinyBeMeViewer.vcxproj" Id="30143bfe-8119-46df-a571-8b7cc39be3b1" />
+</Solution>

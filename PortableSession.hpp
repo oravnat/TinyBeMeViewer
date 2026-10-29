@@ -196,7 +196,7 @@ void PortableSession::SendMouseEvent(uint32_t x, uint32_t y, uint32_t additional
 
 void PortableSession::SendClipboardUTF8(const char* text)
 {
-    SendV2Packet(MessageType_CopyUTF8, strlen(text), text);
+    SendV2Packet(MessageType_CopyUTF8, (uint16_t)strlen(text), text);
 }
 
 

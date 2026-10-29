@@ -204,8 +204,8 @@ static void mouse_button_callback(GLFWwindow* window, int button, int action, in
     glfwGetWindowSize(window, &width, &height);
     double xpos, ypos;
     glfwGetCursorPos(window, &xpos, &ypos);
-    int x = xpos * session.m_view.w / width;
-    int y = ypos * session.m_view.h / height;
+    int x = (int)(xpos * session.m_view.w / width);
+    int y = (int)(ypos * session.m_view.h / height);
 	uint32_t zDelta = 0;
 	uint32_t additionalFlags = 0;
     if (action == GLFW_PRESS)
